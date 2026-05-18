@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SR.DEV — Diseño y desarrollo web a medida en Colombia. Sitios HTML/CSS/JS custom, animaciones 3D, e-commerce. Calidad de agencia, precio de freelancer.">
+<title>SR.DEV — Diseño & Desarrollo Web · Bogotá, Colombia</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/srdev-icon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="scroll-line"></div>
+
+<!-- ══════════ LOGO FIJO (independiente del nav) ══════════ -->
+<a href="#hero" style="
+  position:fixed;top:0;left:2.5rem;
+  height:60px;
+  display:flex;align-items:center;gap:6px;
+  z-index:9999;text-decoration:none;">
+  <div style="background:#6B7A3E;color:#ffffff;font-family:Impact,sans-serif;font-size:1.4rem;letter-spacing:3px;padding:5px 12px;line-height:1.2;">SR</div>
+  <div style="color:#C8A84B;font-size:1.1rem;">◆</div>
+  <div style="color:#F5F5F2;font-family:Impact,sans-serif;font-size:1.4rem;letter-spacing:3px;line-height:1.2;">DEV</div>
+</a>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="navbar">
+  <div style="width:180px;"></div>
+  <ul class="nav-links" style="display:flex;">
+    <li><a href="#sobre" class="active">Sobre mí</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="nav-cta">Cotizar gratis</a>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div id="hero-canvas"></div>
+  <div class="hero-noise"></div>
+  <div class="hero-content">
+    <div class="hero-available">
+      <span class="hero-dot"></span>
+      Disponible para nuevos proyectos
+    </div>
+    <h1 class="hero-h1">
+      Samuel<br>
+      <span class="line-orange">Rojas</span><br>
+      <span class="line-outline">Services</span>
+    </h1>
+    <div class="hero-bottom">
+      <div>
+        <p class="hero-desc">
+          <strong>Sitios web de calidad de agencia, a precio justo.</strong>
+          HTML · CSS · JS custom, animaciones 3D, e-commerce — todo construido a medida para tu negocio en Colombia.
+        </p>
+        <p style="font-size:.88rem; color:var(--olive); font-weight:600; margin-top:.8rem; min-height:1.4em;">
+          <span id="hero-typewriter"></span><span style="animation:blink 1s infinite;">|</span>
+        </p>
+      </div>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn-primary">Ver servicios</a>
+        <a href="#contacto" class="btn-ghost">Hablemos →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}</style>
+
+<!-- ══════════ SOBRE MÍ ══════════ -->
+<section id="sobre">
+  <div class="section-inner">
+    <div class="sobre-grid reveal">
+      <div class="sobre-left">
+        <div class="sobre-avatar">
+          <div class="sobre-initials">SR</div>
+          <div>
+            <div class="sobre-name">Dev Independiente</div>
+            <div class="sobre-role">Bogotá · Colombia</div>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-body">
+        <div class="section-label">Quién soy</div>
+        <h2 class="section-title">Desarrollo web<br>sin intermediarios</h2>
+        <p>Soy desarrollador web independiente con base en Bogotá. Construyo sitios desde cero — sin plantillas, sin constructores drag-and-drop — usando <strong>HTML, CSS y JavaScript</strong> puros para lograr rendimiento y originalidad que los constructores de páginas no pueden ofrecer.</p>
+        <p>Trabajo directamente contigo, sin agencia de por medio. Eso significa <strong>precios más bajos, comunicación directa y entregas más rápidas</strong>. Cada proyecto lo entiendo como una inversión tuya, no como un gasto.</p>
+        <p>Uso herramientas de última generación — incluyendo <strong>IA asistida en desarrollo</strong> — lo que me permite ofrecer resultados de calidad superior en menos tiempo que una agencia tradicional.</p>
+        <div class="skills-grid">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Three.js</span>
+          <span class="skill-tag">Animaciones</span>
+          <span class="skill-tag">Responsive</span>
+          <span class="skill-tag">SEO básico</span>
+          <span class="skill-tag">E-commerce</span>
+          <span class="skill-tag">WhatsApp API</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICIOS / PRECIOS ══════════ -->
+<section id="servicios">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Tarifario 2025</div>
+      <h2 class="section-title">Servicios &<br>Precios</h2>
+      <p style="color:var(--muted);max-width:520px;line-height:1.7;font-size:.92rem;">
+        Precios hasta un <strong style="color:var(--olive);">20% por debajo del mercado</strong> colombiano —
+        sin sacrificar calidad. Basado en tarifas reales de agencias y freelancers en Bogotá (2025).
+      </p>
+    </div>
+
+    <div class="precios-grid reveal">
+
+      <div class="precio-card">
+        <div class="precio-cat">Sitio base</div>
+        <div class="precio-num">$2.4M</div>
+        <div class="precio-label">HTML + CSS + JS Estático</div>
+        <div class="precio-desc">Sitio corporativo completo, diseño custom, sin plantillas. Ideal para empresas que necesitan presencia profesional en internet.</div>
+        <ul class="precio-includes">
+          <li>Hasta 5 secciones (hero, about, servicios, contacto, etc.)</li>
+          <li>Diseño 100% personalizado con tu paleta e identidad</li>
+          <li>Formulario de contacto funcional</li>
+          <li>Responsive — celular, tablet y desktop</li>
+          <li>2 rondas de revisión incluidas</li>
+          <li>Entrega en 7–10 días hábiles</li>
+        </ul>
+      </div>
+
+      <div class="precio-card featured">
+        <div class="precio-badge">Más popular</div>
+        <div class="precio-cat">Sitio profesional</div>
+        <div class="precio-num">$4.8M</div>
+        <div class="precio-label">Animaciones + Interactividad</div>
+        <div class="precio-desc">Todo lo del plan base más micro-animaciones, efectos de scroll, contadores, modales y componentes interactivos avanzados.</div>
+        <ul class="precio-includes">
+          <li>Todo del plan base</li>
+          <li>Scroll reveal y animaciones de entrada</li>
+          <li>Contadores animados y efectos hover</li>
+          <li>Modal de productos/servicios</li>
+          <li>Ticker o marquee animado</li>
+          <li>Loader splash screen</li>
+          <li>Cursor personalizado (desktop)</li>
+          <li>3 rondas de revisión incluidas</li>
+          <li>Entrega en 10–14 días hábiles</li>
+        </ul>
+      </div>
+
+      <div class="precio-card">
+        <div class="precio-cat">Premium 3D</div>
+        <div class="precio-num">$8.0M</div>
+        <div class="precio-label">Three.js + Efectos WebGL</div>
+        <div class="precio-desc">El sitio más impactante del mercado a este precio. Hero 3D interactivo, shaders, partículas reactivas al mouse — imposible en WordPress.</div>
+        <ul class="precio-includes">
+          <li>Todo del plan profesional</li>
+          <li>Escena 3D en hero (Three.js)</li>
+          <li>Partículas o elementos 3D reactivos al mouse</li>
+          <li>Shader GLSL de fondo (efecto fluido/metálico)</li>
+          <li>Optimizado para rendimiento (≤60fps)</li>
+          <li>Fallback automático si el dispositivo no soporta WebGL</li>
+          <li>4 rondas de revisión incluidas</li>
+          <li>Entrega en 14–21 días hábiles</li>
+        </ul>
+      </div>
+
+      <div class="precio-card">
+        <div class="precio-cat">E-commerce</div>
+        <div class="precio-num">$12.0M</div>
+        <div class="precio-label">Catálogo + Cotizador online</div>
+        <div class="precio-desc">Catálogo de productos con fichas técnicas, formulario de cotización por ítem, integración WhatsApp Business. Ideal B2B.</div>
+        <ul class="precio-includes">
+          <li>Todo del plan profesional o premium 3D</li>
+          <li>Catálogo filtrable por categoría</li>
+          <li>Fichas técnicas en modal o PDF descargable</li>
+          <li>Formulario de cotización por producto</li>
+          <li>Integración WhatsApp Business con mensaje predefinido</li>
+          <li>Página de confirmación de cotización</li>
+          <li>Panel básico de edición de productos</li>
+          <li>5 rondas de revisión incluidas</li>
+          <li>Entrega en 21–30 días hábiles</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- ADDONS -->
+    <div class="reveal" style="margin-top:3rem;">
+      <div class="section-label">Adicionales</div>
+      <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.04em;margin-bottom:.5rem;">Servicios complementarios</h3>
+      <p style="color:var(--muted);font-size:.88rem;margin-bottom:0;">Se suman a cualquier plan principal.</p>
+    </div>
+    <div class="addons-grid reveal">
+      <div class="addon-card">
+        <div class="addon-name">Dominio + hosting gestionado</div>
+        <div class="addon-price">$400K – $560K / año</div>
+        <div class="addon-desc">Registro del dominio .com.co y gestión del hosting. Tú no te preocupas por nada técnico.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">SEO básico on-page</div>
+        <div class="addon-price">$480K – $640K</div>
+        <div class="addon-desc">Meta titles, descriptions, schema.org, sitemap.xml y registro en Google Search Console.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Google Analytics 4</div>
+        <div class="addon-price">$320K setup + $320K/mes</div>
+        <div class="addon-desc">Integración GA4 y reporte mensual de tráfico, páginas vistas y conversiones.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Botón WhatsApp flotante</div>
+        <div class="addon-price">$240K – $400K</div>
+        <div class="addon-desc">Botón que abre WhatsApp con mensaje contextual según la sección que está visitando el usuario.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Mantenimiento básico</div>
+        <div class="addon-price">$320K – $480K / mes</div>
+        <div class="addon-desc">Hasta 2 actualizaciones de contenido al mes (textos, imágenes, precios). Respuesta en 24h.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Mantenimiento pro</div>
+        <div class="addon-price">$720K – $960K / mes</div>
+        <div class="addon-desc">Todo lo básico + nuevas secciones, optimizaciones y reporte mensual de analytics.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Fichas técnicas PDF</div>
+        <div class="addon-price">$640K – $960K</div>
+        <div class="addon-desc">Diseño y generación de PDFs descargables por producto o servicio, con tu identidad visual.</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">Upgrade animaciones 3D</div>
+        <div class="addon-price">$2.0M – $3.2M adicional</div>
+        <div class="addon-desc">Convierte un sitio existente (base o profesional) al nivel Premium 3D con Three.js.</div>
+      </div>
+    </div>
+
+    <!-- COMPARATIVA VS MERCADO -->
+    <div class="reveal" style="margin-top:3rem;padding:2rem;border:1px solid var(--border);">
+      <div class="section-label" style="margin-bottom:1rem;">Por qué estos precios</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
+        <div>
+          <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;">Agencia Bogotá</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--muted);">$8M–$20M</div>
+          <div style="font-size:.78rem;color:var(--muted);">sitio corporativo estándar</div>
+        </div>
+        <div>
+          <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;">Freelancer promedio</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--muted);">$3M–$8M</div>
+          <div style="font-size:.78rem;color:var(--muted);">variable según experiencia</div>
+        </div>
+        <div>
+          <div style="font-size:.72rem;color:var(--olive);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;">Mis precios</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--olive);">$2.4M–$12M</div>
+          <div style="font-size:.78rem;color:var(--muted);">20% menos · calidad de agencia</div>
+        </div>
+        <div>
+          <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;">¿Por qué puedo?</div>
+          <div style="font-size:.82rem;color:var(--muted);line-height:1.6;margin-top:.4rem;">Sin equipo grande, sin overhead de agencia. Uso herramientas de IA para trabajar más rápido sin perder calidad.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ PROYECTOS ══════════ -->
+<section id="proyectos">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Trabajo real</div>
+      <h2 class="section-title">Proyectos &<br>Casos de uso</h2>
+      <p style="color:var(--muted);max-width:520px;line-height:1.7;font-size:.92rem;">
+        Cada proyecto resuelve un problema real. No maquetas, no demos — código en producción.
+      </p>
+    </div>
+
+    <!-- CASO DESTACADO: HEVERT SAENZ -->
+    <div class="proyecto-featured reveal" style="margin-top:3rem;">
+      <div class="proyecto-featured-badge">Cliente real · 2026</div>
+      <div class="proyecto-featured-grid">
+        <div class="proyecto-featured-info">
+          <div class="proyecto-featured-cat">Bot de ventas con IA · Automatización completa</div>
+          <h3 class="proyecto-featured-title">Bot de ventas autónomo con IA para negocio colombiano</h3>
+          <p class="proyecto-featured-desc">
+            Bot de ventas 100% autónomo construido para <strong>Hevert Saenz</strong>. Los clientes escriben por el canal de mensajería, el bot los guía a través de todo el flujo de compra: producto → cantidad → envío → datos → pago. <strong>Gemini 2.5 Flash</strong> gestiona la conversación con contexto de negocio real; <strong>Groq Vision</strong> analiza los comprobantes de pago Nequi enviados como imagen y los valida en segundos. Orquestado en <strong>n8n</strong> con 41 nodos, <strong>Redis</strong> para memoria de sesión y <strong>Google Sheets</strong> como CRM.
+          </p>
+          <div class="proyecto-featured-tags">
+            <span class="ptag">n8n · 41 nodos</span>
+            <span class="ptag">Gemini 2.5 Flash</span>
+            <span class="ptag">Groq Vision</span>
+            <span class="ptag">Redis</span>
+            <span class="ptag">Google Sheets CRM</span>
+            <span class="ptag">Gmail API</span>
+          </div>
+          <div class="proyecto-featured-resultado">
+            <div class="resultado-icon">↗</div>
+            <div>
+              <div style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);margin-bottom:.2rem;">Resultado</div>
+              <div style="font-size:.88rem;color:var(--muted);line-height:1.6;">Ventas cerradas, pagos verificados y pedidos registrados en Sheets — sin intervención humana, 24/7.</div>
+            </div>
+          </div>
+        </div>
+        <div class="proyecto-featured-visual">
+          <div class="proyecto-visual-box">
+            <div class="visual-flow">
+              <div class="visual-node">
+                <div class="vnode-icon">💬</div>
+                <div class="vnode-label">Mensajería</div>
+              </div>
+              <div class="visual-arrow">→</div>
+              <div class="visual-node">
+                <div class="vnode-icon">⚙</div>
+                <div class="vnode-label">n8n</div>
+              </div>
+              <div class="visual-arrow">→</div>
+              <div class="visual-node vnode-ai">
+                <div class="vnode-icon">🤖</div>
+                <div class="vnode-label">Gemini / Groq</div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);line-height:1.8;">
+              <div><span style="color:var(--olive);font-weight:700;">01</span> &nbsp;Cliente chatea → Gemini entiende y vende</div>
+              <div><span style="color:var(--olive);font-weight:700;">02</span> &nbsp;FSM guía: producto → ciudad → datos → pago</div>
+              <div><span style="color:var(--olive);font-weight:700;">03</span> &nbsp;Cliente envía foto del comprobante Nequi</div>
+              <div><span style="color:var(--olive);font-weight:700;">04</span> &nbsp;Groq Vision valida monto y estado del pago</div>
+              <div><span style="color:var(--olive);font-weight:700;">05</span> &nbsp;Pedido → Sheets CRM + email al dueño</div>
+            </div>
+            <div style="margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:.8rem;text-align:center;">
+              <div>
+                <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--olive);line-height:1;">41</div>
+                <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">nodos n8n</div>
+              </div>
+              <div>
+                <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--olive);line-height:1;">7</div>
+                <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">pasos de venta</div>
+              </div>
+              <div>
+                <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--olive);line-height:1;">3</div>
+                <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">IAs integradas</div>
+              </div>
+              <div>
+                <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--olive);line-height:1;">24/7</div>
+                <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">sin intervención</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID OTROS PROYECTOS -->
+    <div style="margin-top:2rem;">
+      <div class="section-label" style="margin-bottom:1.5rem;">Más trabajo</div>
+      <div class="otros-proyectos-grid reveal">
+
+        <div class="op-card">
+          <div class="op-cat">Web · PWA</div>
+          <div class="op-title">Draft App</div>
+          <div class="op-desc">PWA de torneos deportivos con sincronización en tiempo real. React + TypeScript + Supabase + RLS.</div>
+          <div class="op-tags">
+            <span class="ptag-sm">React</span>
+            <span class="ptag-sm">TypeScript</span>
+            <span class="ptag-sm">Supabase</span>
+          </div>
+        </div>
+
+        <div class="op-card">
+          <div class="op-cat">IA · Trazabilidad</div>
+          <div class="op-title">Developer Zeta</div>
+          <div class="op-desc">Sistema de trazabilidad con IA para empresa Challenger. Web + n8n + base de datos integrada.</div>
+          <div class="op-tags">
+            <span class="ptag-sm">n8n</span>
+            <span class="ptag-sm">IA</span>
+            <span class="ptag-sm">Web</span>
+          </div>
+        </div>
+
+        <div class="op-card">
+          <div class="op-cat">IoT · Hardware</div>
+          <div class="op-title">Sistema IoT Cisco</div>
+          <div class="op-desc">Red de sensores ESP32 con MQTT, Docker y dashboard Grafana en tiempo real. Proyecto Cisco Academy.</div>
+          <div class="op-tags">
+            <span class="ptag-sm">ESP32</span>
+            <span class="ptag-sm">MQTT</span>
+            <span class="ptag-sm">Grafana</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LINK PORTAFOLIO COMPLETO -->
+    <div class="reveal" style="margin-top:2.5rem;padding:1.5rem 2rem;border:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--olive);margin-bottom:.4rem;">Portafolio completo</div>
+        <div style="font-size:.95rem;color:var(--white);font-weight:500;">Ver todos los proyectos, certificaciones y experiencia detallada</div>
+        <div style="font-size:.82rem;color:var(--muted);margin-top:.3rem;">samuel-rojas-monroy-official-repository.github.io/Portfolio</div>
+      </div>
+      <a href="https://samuel-rojas-monroy-official-repository.github.io/Portfolio" target="_blank" rel="noopener" class="btn-ghost" style="white-space:nowrap;cursor:none;">Ver portafolio →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ PROCESO ══════════ -->
+<section id="proceso">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Cómo trabajamos</div>
+      <h2 class="section-title">El proceso<br>de trabajo</h2>
+    </div>
+    <div class="proceso-steps reveal">
+      <div class="proceso-step">
+        <div class="step-num">01</div>
+        <div>
+          <div class="step-title">Reunión de discovery</div>
+          <div class="step-desc">Conversamos por WhatsApp o videollamada. Entiendo tu negocio, tus clientes, qué quieres comunicar y qué resultados esperas del sitio. Sin costo.</div>
+          <div class="step-time">⟶ Día 1</div>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="step-num">02</div>
+        <div>
+          <div class="step-title">Propuesta y anticipo</div>
+          <div class="step-desc">Te envío propuesta detallada con precio, tiempos y entregables. Al aceptar, pagas el 50% de anticipo para arrancar. El resto al entregar.</div>
+          <div class="step-time">⟶ Día 2–3</div>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="step-num">03</div>
+        <div>
+          <div class="step-title">Diseño y desarrollo</div>
+          <div class="step-desc">Construyo el sitio completo. Puedes ver el avance en un link de preview en tiempo real. Comunicación directa conmigo, sin intermediarios.</div>
+          <div class="step-time">⟶ Días 4–18 (según plan)</div>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="step-num">04</div>
+        <div>
+          <div class="step-title">Revisiones y ajustes</div>
+          <div class="step-desc">Tienes rondas de revisión incluidas según tu plan. Hago los cambios rápido — normalmente en menos de 24 horas.</div>
+          <div class="step-time">⟶ Incluido en el plan</div>
+        </div>
+      </div>
+      <div class="proceso-step">
+        <div class="step-num">05</div>
+        <div>
+          <div class="step-title">Entrega y publicación</div>
+          <div class="step-desc">Pago del saldo restante (50%). Publico el sitio en tu dominio, te entrego los archivos y te explico cómo funciona todo. El sitio es tuyo.</div>
+          <div class="step-time">⟶ Día de entrega</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACTO ══════════ -->
+<section id="contacto">
+  <div class="section-inner">
+    <div class="contacto-grid reveal">
+      <div class="contacto-left">
+        <div class="section-label">Hablemos</div>
+        <h2 class="section-title">¿Listo para<br>tu sitio web?</h2>
+        <p>Escríbeme por WhatsApp o usa el formulario. Respondo en menos de 2 horas en días hábiles. La primera reunión es <strong style="color:var(--white);">sin costo y sin compromiso.</strong></p>
+        <p>📍 Bogotá, Colombia — trabajo con clientes de todo el país y del exterior.</p>
+        <a href="https://wa.me/573043538450?text=Hola,%20quiero%20cotizar%20un%20sitio%20web" class="contacto-whatsapp" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.112 1.528 5.836L0 24l6.335-1.521A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.779 9.779 0 01-5.018-1.382l-.36-.214-3.732.897.944-3.634-.234-.373A9.78 9.78 0 012.182 12C2.182 6.591 6.591 2.182 12 2.182S21.818 6.591 21.818 12 17.409 21.818 12 21.818z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+      </div>
+      <div>
+        <div class="contacto-form">
+          <div class="form-row">
+            <div class="field">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre" id="cNombre">
+            </div>
+            <div class="field">
+              <label>Empresa / negocio</label>
+              <input type="text" placeholder="Nombre de tu empresa">
+            </div>
+          </div>
+          <div class="field">
+            <label>Email *</label>
+            <input type="email" placeholder="correo@tuempresa.com" id="cEmail">
+          </div>
+          <div class="field">
+            <label>Plan de interés</label>
+            <select>
+              <option value="">— Selecciona —</option>
+              <option>Sitio base — $2.4M</option>
+              <option>Sitio profesional — $4.8M</option>
+              <option>Premium 3D — $8.0M</option>
+              <option>E-commerce — $12.0M</option>
+              <option>Solo quiero cotizar / tengo dudas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Cuéntame sobre tu proyecto</label>
+            <textarea placeholder="¿Qué tipo de negocio tienes? ¿Ya tienes sitio web? ¿Qué necesitas comunicar?"></textarea>
+          </div>
+          <button class="btn-submit" id="formBtn">Enviar mensaje</button>
+          <div class="form-ok" id="formOk">✔ Mensaje recibido — te respondo antes de 2 horas.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-logo">
+    <svg width="90" height="26" viewBox="0 0 90 26" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="26" height="26" fill="#6B7A3E"/>
+      <rect x="21" y="0" width="5" height="5" fill="#4A5528"/>
+      <text x="13" y="18" font-family="'Bebas Neue',sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">SR</text>
+      <rect x="33" y="10" width="6" height="6" fill="#C8A84B" transform="rotate(45 36 13)"/>
+      <text x="44" y="19" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#F5F5F2" text-anchor="start" letter-spacing="1.5">DEV</text>
+    </svg>
+  </div>
+  <div class="footer-copy">© 2026 SR.DEV · Desarrollo web independiente · Bogotá, Colombia</div>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="#sobre">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
